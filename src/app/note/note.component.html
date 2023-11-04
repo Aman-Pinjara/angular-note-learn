@@ -1,0 +1,17 @@
+<div class="card my-4">
+    <div class="card-header" [ngClass]="{'done' : markedAsDone}">
+        <h4>{{ note.title }}</h4>
+    </div>
+    <div class="card-body" [ngClass]="{'done' : markedAsDone}">
+        <p >{{ note.content }}</p>
+    </div>
+    <div class="container-fluid d-flex justify-content-between mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" [(ngModel)] = "markedAsDone" id="flexCheckDefault" checked/>
+            <label class="form-check-label" for="flexCheckDefault">
+                Mark as Done
+            </label>
+        </div>
+        <button class="btn btn-danger btn-sm mx-3" (click)="onDeleteNote()">Delete</button>
+    </div>
+</div>
