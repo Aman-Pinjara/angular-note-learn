@@ -7,13 +7,15 @@ import { NoteComponent } from './note/note.component';
 import { NotelistComponent } from './notelist/notelist.component';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoteComponent,
     NotelistComponent,
-    AddNoteComponent
+    AddNoteComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
